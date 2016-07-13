@@ -1,0 +1,15 @@
+input{
+	text-align: center;
+}
+.user-area *{
+	text-align: center;
+}
+#validation-alert {
+	font-size: 10px;
+	color: red;
+}
+
+#letterGuessed {
+	width: 80px;
+	margin: auto;
+}
