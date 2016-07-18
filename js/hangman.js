@@ -3,7 +3,7 @@ var lettersGuessed = [];
 var philsThoughs;
 var tiesLeft = 3;
 var wordList = ["headphones", "computer", "internet", "petroleum", "architect","engineer"];
-var curWord;
+var chosenWord;
 var curShownWord;
 var randomWordId;
 
@@ -57,14 +57,18 @@ function ResetGame()
 {
 	var curWord = wordList[Math.floor((Math.random() * wordList.length))];
 	alert(curWord);
-	InitShownWord(curWord);
 }
 
-function InitShownWord(curWord) {
+function InitShownWord() {
+	ResetGame
 	var wordArray = curWord.split("");
 	console.log(wordArray);
 	for(i = 0; i < wordArray.lenth; i++)
 	{
 		
 	}
+}
+
+function hmWord(chosenWord, chosenWordArray, shownString, letterGuessed) {
+
 }
