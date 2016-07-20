@@ -11,6 +11,7 @@
 		<link rel="stylesheet" type="text/css" href="assets/css/style.css">
 		<link rel="stylesheet" type="text/css" href="https://bootswatch.com/darkly/bootstrap.min.css">
 
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
 		<script src="js/game.js" type="text/javascript"></script>
 	</head>
 	<body>
@@ -26,8 +27,8 @@
 				<div class="col-xs-8">
 						
 						<div class="row">
-							<div class="col-xs-12">
-								<img src="https://placeimg.com/1000/600/any" class="img-responsive" alt="Image">
+							<div class="col-xs-12 img-container">
+								<img src="assets/images/Initial_Frame.png" class="img-responsive" id="story-board" alt="Image">
 							</div>
 						</div>
 						<div class="row">
@@ -43,25 +44,50 @@
 				</div>
 				<div class="col-xs-4">
 						<div class="row">
-							<h3>Meet Phil</h3>
-							<p>Phil has been having a tough and stressfull time at work and to top it all off, he just found out that his wife has been cheating on him with his best friend. He really feels like he has hit rock bottom and is finding himself in a very dark place.</p>
-							<p>Let's see if we can help lift Phils spirit by playing a fun word game.</p>
+							<div class="col-xs-12">
+								<h3>Meet Phil</h3>
+								<p>Phil has been having a tough and stressfull time at work and to top it all off, he just found out that his wife has been cheating on him with his best friend. He really feels like he has hit rock bottom and is finding himself in a very dark place.</p>
+								<p>Let's see if we can help lift Phils spirit by playing a fun word game.</p>
+							</div>
 						</div>
 						<div class="row">
-							<h4>Press a Key to Guess a letter</h4>
+							<div class="col-xs-12">
+								<h4>Press a Key to Guess a letter</h4>
+							</div>
 						</div>
 						<div class="row">
-							<p id="shown-word"></p>
-							<p id="validation-alert"></p>
+							<div class="col-xs-12">
+								<p id="shown-word"></p>
+								<p id="validation-alert"></p>
+							</div>
 						</div>
 						<div class="row">
 							
 						</div>
+						
 						<div class="row">
-							<h3>Letters Guessed</h3>
+							<div class="col-xs-12">
+								<p>Hypothetical Kills: <span id="cKills">0</span></p>
+							</div>
+							<div class="col-xs-12">
+								<p>Saves: <span id="cSaves">0</span></p>
+							</div>
+						</div>
+						
+						<div class="row">
+							<div class="col-xs-12">
+								<h3>Letters Guessed</h3>
+							</div>
 						</div>
 						<div class="row">
-							<p id="letters-guessed"></p>
+							<div class="col-xs-12">
+								<p id="letters-guessed"></p>
+							</div>
+						</div>
+						<div class="row">
+							<div class="col-xs-12">
+								<button type="button" class="btn btn-default" id="btn-reset" onclick="initializeGame()">Play Again</button>
+							</div>
 						</div>
 				</div>
 			</div>
@@ -74,5 +100,7 @@
 		
 		<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
 		<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js" integrity="sha384-0mSbJDEHialfmuBBQP6A4Qrprq5OVfW37PRR3j5ELqxss1yVqOtnepnHVP9aJ7xS" crossorigin="anonymous"></script>
+
+		<script src="js/animations.js" type="text/javascript"></script>
 	</body>
 </html>
